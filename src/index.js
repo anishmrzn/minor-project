@@ -26,7 +26,7 @@ function Nav() {
       <nav className="flex items-center justify-between px-10 ">
         <img
           className="w-60 cursor-pointer transition hover:scale-105 duration-500"
-          src="icon1.png"
+          src="./minor-project/icon1.png"
           alt="icon"
         ></img>
 
@@ -72,23 +72,23 @@ function Nav() {
 }
 function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center  gap-[6rem]  px-5 h-[40rem] ">
+    <div className="flex flex-col lg:flex-row items-center justify-center  gap-[6rem]  px-5 h-[50rem] lg:h-[40rem] ">
       <img
         className=" w-[25rem] lg:w-[35rem]  lg:pl-[5rem]  "
-        src="heroimg.png"
+        src="./minor-project/heroimg.png"
         alt="heroimg"
       ></img>
-      <div className="flex flex-col items-center space-y-10 lg:space-y-20">
-        <div className="sm:text-2xl w-[15rem] md:text-4xl md:w-[25rem] lg:w-30 lg:text-5xl font-bold ">
+      <div className="flex flex-col text-center lg:text-end items-center space-y-10 lg:space-y-20">
+        <div className="sm:text-2xl  w-[15rem] md:text-4xl md:w-[25rem] lg:w-30 lg:text-5xl font-bold ">
           Lorem
-          <span className=" bg-[#42e2b6] bg-opacity-50 rounded-lg px-5 ">
+          <span className=" bg-[#42e2b6] bg-opacity-50 rounded-lg px-5 mx-2 ">
             ipsum
           </span>
-          dolor sit
-          <span className="bg-[#42e2b6] bg-opacity-50 rounded-lg px-5 ">
+          dolor sesit
+          <span className="bg-[#42e2b6] bg-opacity-50 rounded-lg px-5 mx-2 ">
             amet
           </span>
-          ,consectetur adipiscing
+          ,conse as adipiscing
         </div>
         <button className=" text-lg hover:scale-105 bg-[#42e2b6] px-10 py-3 rounded-3xl transition hover:bg-[#3fc49e] duration-500 lg:ml-[26rem] ">
           Buy Now
