@@ -9,6 +9,8 @@ function App() {
       <div className="container">
         <Nav />
         <Hero />
+        <Testimonials />
+        <Services />
       </div>
       <Footer />
     </>
@@ -29,7 +31,7 @@ function Nav() {
       <nav className="flex items-center justify-between px-10 ">
         <img
           className="w-60 cursor-pointer transition hover:scale-105 duration-500"
-          src="icon1.png"
+          src="./minor-project/icon1.png"
           alt="icon"
         ></img>
 
@@ -74,7 +76,7 @@ function Hero() {
     <div className="flex flex-col lg:flex-row items-center justify-center  gap-[6rem]  px-5 h-[50rem] lg:h-[40rem] ">
       <img
         className=" w-[25rem] lg:w-[35rem]  lg:pl-[5rem]  "
-        src="heroimg.png"
+        src="./minor-project/heroimg.png"
         alt="heroimg"
       ></img>
       <div className="flex flex-col text-center lg:text-end items-center space-y-10 lg:space-y-20">
@@ -94,9 +96,52 @@ function Hero() {
     </div>
   );
 }
+function Testimonials() {
+  return (
+    <div className="h-[10rem] bg-[#3fc49e] rounded-2xl text-3xl font-bold text-white p-10">
+      Testimonials
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <div className="h-[17rem] mt-20 flex items-center justify-center md:h-[5rem]">
+      <div className="bg-[#42e2b6] flex-col flex md:flex-row justify-between gap-10 rounded-2xl  p-10 absolute z-2 ">
+        <div className="flex gap-5">
+          <div className=" bg-[#C7FFF2] text-[#2E9E7F] flex items-center justify-center item rounded-[100%] px-5 py-[1.2rem] ">
+            <ion-icon name="bicycle-outline"></ion-icon>
+          </div>
+          <div>
+            <p className="text-lg">Free Delivery</p>
+            <p className="font-light text-sm">lorem epsum</p>
+          </div>
+        </div>
+        <div className="flex gap-5">
+          <div className=" bg-[#C7FFF2] text-[#2E9E7F] flex items-center justify-center rounded-[100%] px-5 py-[1.2rem]">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+          <div>
+            <p className="text-lg">Free Refund</p>
+            <p className="font-light text-sm">lorem epsum</p>
+          </div>
+        </div>
+        <div className="flex gap-5">
+          <div className=" bg-[#C7FFF2] text-[#2E9E7F] flex items-center justify-center rounded-[100%] px-5 py-[1.2rem]">
+            <ion-icon name="diamond-outline"></ion-icon>
+          </div>
+          <div>
+            <p className="text-lg">Premium Quality</p>
+            <p className="font-light text-sm">lorem epsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 function Footer() {
   return (
-    <div className="bg-[#18232F] text-white">
+    <div className="bg-[#18232F] text-white ">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4   pt-20 pb-10 gap-10 ">
         <div className="flex flex-col items-center  gap-10">
           <span className="text-3xl text-white font-semibold">Med Clicks</span>
@@ -150,7 +195,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <p className="text-sm font-light text-[#666A71] pt-10 flex flex-col items-center justify-center gap-10">
+      <p className="text-sm font-light text-[#666A71] pt-10 flex flex-col items-center justify-center gap-10 pb-5">
         {" "}
         &copy; Copyright 2023 Lorem epsum siter
       </p>
