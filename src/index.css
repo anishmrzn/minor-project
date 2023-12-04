@@ -7,9 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  background-color: #edfbf7;
 }
 .container {
-  @apply max-w-full px-5  bg-[#edfbf7];
+  @apply max-w-full px-5;
 }
 /* hamburger menu */
 .hamburger {
@@ -48,4 +49,10 @@ body {
 }
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+.button {
+  @apply text-lg bg-[#42e2b6] px-10 py-3 rounded-3xl transition hover:bg-[#3fc49e] duration-500;
+}
+.icon {
+  @apply text-[#42e2b6] text-2xl hover:text-[#3fc49e] transform hover:scale-110 transition-all duration-500;
 }
