@@ -29,7 +29,7 @@ function Nav() {
       <nav className="flex items-center justify-between px-10 ">
         <img
           className="w-60 cursor-pointer transition hover:scale-105 duration-500"
-          src="./minor-project/icon1.png"
+          src="icon1.png"
           alt="icon"
         ></img>
 
@@ -74,7 +74,7 @@ function Hero() {
     <div className="flex flex-col lg:flex-row items-center justify-center  gap-[6rem]  px-5 h-[50rem] lg:h-[40rem] ">
       <img
         className=" w-[25rem] lg:w-[35rem]  lg:pl-[5rem]  "
-        src="./minor-project/heroimg.png"
+        src="heroimg.png"
         alt="heroimg"
       ></img>
       <div className="flex flex-col text-center lg:text-end items-center space-y-10 lg:space-y-20">
