@@ -5,10 +5,14 @@ module.exports = {
     screens: {
       sm: "280px",
       md: "768px",
-      lg: "1324px",
+      lg: "1200px",
       xl: "1440px",
     },
-    extend: {},
+    extend: {
+      screens: {
+        ssm: "400px",
+      },
+    },
   },
   plugins: [],
 };

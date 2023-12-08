@@ -10,7 +10,11 @@ body {
   background-color: #edfbf7;
 }
 .container {
-  @apply max-w-full px-5;
+  @apply max-w-full;
+}
+/* Sticky nav */
+.sticky {
+  @apply fixed w-[100%] bg-white z-10;
 }
 /* hamburger menu */
 .hamburger {
