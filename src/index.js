@@ -9,7 +9,7 @@ function App() {
     {
       id: 1,
       name: "Xavier raez",
-      image: "user-1.jpg",
+      image: "./minor-project/user-1.jpg",
       review:
         "The website was user-friendly and easy to navigate. The layout was intuitive, making it simple to find the medications I needed.",
       transform: "translate-x-[100%] ",
@@ -17,7 +17,7 @@ function App() {
     {
       id: 2,
       name: "Isabella Ramirez",
-      image: "user-2.jpg",
+      image: "./minor-project/user-2.jpg",
       review:
         "I was impressed with the variety of medications available. They had a comprehensive selection, including both prescription and over-the-counter drugs.",
       transform: "translate-x-[300%]  ",
@@ -25,7 +25,7 @@ function App() {
     {
       id: 3,
       name: "Marcus Johnson",
-      image: "user-3.jpg",
+      image: "./minor-project/user-3.jpg",
       review:
         "The prescription process was straightforward. MedClicks required a valid prescription for prescription medications, ensuring a responsible and legal transaction.",
       transform: "translate-x-[500%]  ",
@@ -70,7 +70,7 @@ function Nav() {
       <nav className="  flex items-center justify-between px-10   m-auto ">
         <img
           className="w-[12rem] cursor-pointer transition hover:scale-105 duration-500"
-          src="icon1.png"
+          src="./minor-project/icon1.png"
           alt="icon"
         ></img>
 
@@ -118,7 +118,7 @@ function Hero() {
     >
       <img
         className=" w-[25rem] lg:w-[35rem]  lg:pl-[5rem]  "
-        src="heroimg.png"
+        src="./minor-project/heroimg.png"
         alt="heroimg"
       ></img>
       <div className="flex flex-col text-center lg:text-end items-center space-y-10 lg:space-y-20">
@@ -188,13 +188,13 @@ function Carousel({ slides }) {
 
         <div className="absolute top-0 h-[80%] md:h-[100%] w-full justify-between  flex  items-center text-black ">
           <button
-            className="text-3xl hover:text-[#42e2b6] transform hover:scale-110 transition-all duration-500"
+            className="text-3xl hover:text-[#42e2b6] transform hover:scale-110 transition-all duration-500 focus:outline-none"
             onClick={previousSlide}
           >
             <ion-icon name="arrow-back-outline"></ion-icon>
           </button>
           <button
-            className="text-3xl hover:text-[#42e2b6] transform hover:scale-110 transition-all duration-500"
+            className="text-3xl hover:text-[#42e2b6] transform hover:scale-110 transition-all duration-500 focus:outline-none"
             onClick={nextSlide}
           >
             <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -202,7 +202,7 @@ function Carousel({ slides }) {
         </div>
         <div className="absolute top-[70%] lg:top-[90%] left-[41%] lg:left-[44%] flex gap-5">
           <button
-            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 ${
+            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 focus:outline-none ${
               current == 0 ? "text-[#42e2b6] transform scale-110 " : ""
             } `}
             onClick={activateDot1}
@@ -210,7 +210,7 @@ function Carousel({ slides }) {
             <ion-icon name="ellipse-outline"></ion-icon>
           </button>
           <button
-            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 ${
+            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 focus:outline-none ${
               current == 1 ? "text-[#42e2b6] transform scale-110 " : ""
             } `}
             onClick={activateDot2}
@@ -218,7 +218,7 @@ function Carousel({ slides }) {
             <ion-icon name="ellipse-outline"></ion-icon>
           </button>
           <button
-            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 ${
+            className={`text-[10px] lg:text-lg hover:text-[#42e2b6] transition duration-500 transform hover:scale-110 focus:outline-none ${
               current == 2 ? "text-[#42e2b6] transform scale-110 " : ""
             } `}
             onClick={activateDot3}
