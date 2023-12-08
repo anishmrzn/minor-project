@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { act } from "react-dom/test-utils";
+
 // primaryColor = #42e2b6
 // secondaryColor = #3fc49e
 function App() {
@@ -9,7 +9,7 @@ function App() {
     {
       id: 1,
       name: "Xavier raez",
-      image: "./minor-project/user-1.jpg",
+      image: "user-1.jpg",
       review:
         "The website was user-friendly and easy to navigate. The layout was intuitive, making it simple to find the medications I needed.",
       transform: "translate-x-[100%] ",
@@ -17,7 +17,7 @@ function App() {
     {
       id: 2,
       name: "Isabella Ramirez",
-      image: "./minor-project/user-2.jpg",
+      image: "user-2.jpg",
       review:
         "I was impressed with the variety of medications available. They had a comprehensive selection, including both prescription and over-the-counter drugs.",
       transform: "translate-x-[300%]  ",
@@ -25,7 +25,7 @@ function App() {
     {
       id: 3,
       name: "Marcus Johnson",
-      image: "./minor-project/user-3.jpg",
+      image: "user-3.jpg",
       review:
         "The prescription process was straightforward. MedClicks required a valid prescription for prescription medications, ensuring a responsible and legal transaction.",
       transform: "translate-x-[500%]  ",
@@ -70,7 +70,7 @@ function Nav() {
       <nav className="  flex items-center justify-between px-10   m-auto ">
         <img
           className="w-[12rem] cursor-pointer transition hover:scale-105 duration-500"
-          src="./minor-project/icon1.png"
+          src="icon1.png"
           alt="icon"
         ></img>
 
@@ -118,7 +118,7 @@ function Hero() {
     >
       <img
         className=" w-[25rem] lg:w-[35rem]  lg:pl-[5rem]  "
-        src="./minor-project/heroimg.png"
+        src="heroimg.png"
         alt="heroimg"
       ></img>
       <div className="flex flex-col text-center lg:text-end items-center space-y-10 lg:space-y-20">
